@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -23,22 +23,146 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        brown: '#B68C5A',
+                        'gradient-color-stop': 'rgba(17, 17, 17, 0.00)'
+                    },
+                    backgroundImage: {
+                        'banner-bg': "url('./images/banner.png')"
                     }
                 }
             }
         }
     </script>
+    <!-- custom styles -->
+    <style>
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-
+    <header class="max-w-7xl mx-auto">
+        <!-- navbar -->
+        <div class="navbar py-12 font-poppins">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>Services</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Cases</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Contact Us</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">
+                    <img src="./images/logo2.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Services</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Cases</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Blog</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Contact Us</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-brown  border-transparent text-lg font-semibold text-white">Button</a>
+            </div>
+        </div>
+        <!-- hero section -->
+        <div class="hero rounded-lg overflow-hidden  bg-banner-bg ">
+            <div class="hero-overlay bg-gradient-to-b from-[#111] to-gradient-color-stop"></div>
+            <div class="hero-content text-center text-neutral-content py-24">
+                <div class="md:max-w-[70%] text-white">
+                    <h1 class="mb-5 text-3xl md:text-7xl font-extrabold font-garamond text-center md:leading-[85px]">We
+                        Provide Effective Legal Solutions</h1>
+                    <p class="font-poppins text-center mt-6 mb-8">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div>
+                        <input type="text" class="input text-gray-500 w-3/4 mb-5" placeholder="Search your services">
+                        <button
+                            class="btn bg-brown border-transparent text-white text-xl font-semibold capitalize ml-6">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
