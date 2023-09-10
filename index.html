@@ -25,7 +25,9 @@
                         clifford: '#da373d',
                         brown: '#B68C5A',
                         'gradient-color-stop': 'rgba(17, 17, 17, 0.00)',
-                        'light-yellow': '#E7E7E7'
+                        'light-yellow': '#E7E7E7',
+                        'card-start-gradient': '#F3F3F3',
+                        'card-end-gradient': 'rgba(243, 243, 243, 0.00)'
                     },
                     backgroundImage: {
                         'banner-bg': "url('./images/banner.png')"
@@ -201,7 +203,8 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="p-16  border-b border-r border-l border-light-yellow">
+                <div
+                    class="p-16 bg-gradient-to-b from-card-start-gradient to-card-end-gradient border-b border-r border-l border-light-yellow">
                     <div>
                         <img class="mx-auto" src="./images/criminal.png" alt="">
                     </div>
@@ -338,7 +341,7 @@
             <h2 class="font-extrabold text-4xl font-garamond text-center">Frequently Asked Any Questions</h2>
             <p class="max-w-[65%] leading-6 text-center mx-auto pb-16 pt-6">There are many variations of passages of
                 Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-            <div class="flex gap-7 items-center">
+            <div class="flex gap-7 items-center flex-col lg:flex-row">
                 <!-- accordion -->
                 <div class="space-y-7 flex-1">
                     <!-- first question -->
@@ -396,6 +399,55 @@
                 <!-- image -->
                 <div class="flex-1">
                     <img src="./images/faq.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="mb-28">
+            <h2 class="font-extrabold text-4xl font-garamond text-center">Contact With Us</h2>
+            <p class="max-w-[65%] leading-6 text-center mx-auto pb-16 pt-6">There are many variations of passages of
+                Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="flex gap-7 flex-col lg:flex-row">
+                <!-- contact cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 flex-1">
+                    <!-- card 1 -->
+                    <div class="py-16 bg-[#F3F3F3] border-b border-r border-[#CFCFCF]">
+                        <img src="./images/location.png" alt="" class="mx-auto">
+                        <h4 class="font-extrabold text-2xl font-garamond py-4 text-center">Address</h4>
+                        <p class="font-poppins leading-6 text-center">A108 Adam Street, <br>
+                            New York, NY 535022</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="py-16 bg-[#F3F3F3] border-b border-[#CFCFCF]">
+                        <img src="./images/call.png" alt="" class="mx-auto">
+                        <h4 class="font-extrabold text-2xl font-garamond py-4 text-center">Call Us</h4>
+                        <p class="font-poppins leading-6 text-center">+88 01750 00 00 00 <br>
+                            +88 01750 00 00 00</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="py-16 bg-[#F3F3F3] border-r border-[#CFCFCF]">
+                        <img src="./images/email.png" alt="" class="mx-auto">
+                        <h4 class="font-extrabold text-2xl font-garamond py-4 text-center">Email Us</h4>
+                        <p class="font-poppins leading-6 text-center">info@gmail.com <br>
+                            info@gmail.com</p>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="py-16 bg-[#F3F3F3]">
+                        <img src="./images/time.png" alt="" class="mx-auto">
+                        <h4 class="font-extrabold text-2xl font-garamond py-4 text-center">Working Hours</h4>
+                        <p class="font-poppins leading-6 text-center">Mon-Fri: 9AM to 5PM <br>
+                            Sunday: 9AM to 1 PM</p>
+                    </div>
+                </div>
+                <!-- form -->
+                <div class="flex-1">
+                    <form class="flex flex-col space-y-7">
+                        <input type="text" name="" id="" placeholder="Your Name" class="bg-[#F3F3F3] input">
+                        <input type="email" name="" placeholder="Your Email" id="" class="bg-[#F3F3F3] input">
+                        <input type="text" name="" placeholder="Subject" id="" class="bg-[#F3F3F3] input">
+                        <textarea name="" placeholder="Your Message" id=""  class="bg-[#F3F3F3] p-3 rounded-lg resize-none" cols="30" rows="10"></textarea>
+                        <button class="btn bg-brown font-poppins font-semibold text-white border-transparent">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
