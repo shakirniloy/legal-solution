@@ -69,8 +69,8 @@
     </style>
 </head>
 
-<body>
-    <header class="max-w-7xl mx-auto">
+<body class="">
+    <header class="max-w-7xl mx-auto px-4">
         <!-- navbar -->
         <div class="navbar py-12 font-poppins">
             <div class="navbar-start">
@@ -182,7 +182,7 @@
             </div>
         </div>
     </header>
-    <main class="max-w-7xl mx-auto">
+    <main class="max-w-7xl mx-auto px-4">
         <!-- practice area -->
         <section class="py-28">
             <h2 class="font-garamond text-4xl font-extrabold text-center">The Legal Practice Area</h2>
@@ -445,15 +445,54 @@
                         <input type="text" name="" id="" placeholder="Your Name" class="bg-[#F3F3F3] input">
                         <input type="email" name="" placeholder="Your Email" id="" class="bg-[#F3F3F3] input">
                         <input type="text" name="" placeholder="Subject" id="" class="bg-[#F3F3F3] input">
-                        <textarea name="" placeholder="Your Message" id=""  class="bg-[#F3F3F3] p-3 rounded-lg resize-none" cols="30" rows="10"></textarea>
-                        <button class="btn bg-brown font-poppins font-semibold text-white border-transparent">Send Message</button>
+                        <textarea name="" placeholder="Your Message" id=""
+                            class="bg-[#F3F3F3] p-3 rounded-lg resize-none" cols="30" rows="10"></textarea>
+                        <button class="btn bg-brown font-poppins font-semibold text-white border-transparent">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="bg-[#111] text-white px-4">
+        <div class="footer py-10 justify-between text-base-content max-w-7xl mx-auto">
+            <nav>
+                <header class="footer-title text-white opacity-100">
+                    <img src="./images/logo.png" alt="">
+                </header>
+                <a class="link link-hover text-white">Branding</a>
+                <a class="link link-hover text-white">Design</a>
+                <a class="link link-hover text-white">Marketing</a>
+                <a class="link link-hover text-white">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title text-white opacity-100">Company</header>
+                <a class="link link-hover text-white">About us</a>
+                <a class="link link-hover text-white">Contact</a>
+                <a class="link link-hover text-white">Jobs</a>
+                <a class="link link-hover text-white">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title text-white opacity-100">Legal</header>
+                <a class="link link-hover text-white">Terms of use</a>
+                <a class="link link-hover text-white">Privacy policy</a>
+                <a class="link link-hover text-white">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title opacity-100 text-white">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text text-white">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                        <button
+                            class="btn text-white font-poppins absolute top-0 right-0 bg-brown border-transparent"><i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </footer>
 </body>
 
