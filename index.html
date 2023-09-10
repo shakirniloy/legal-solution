@@ -43,6 +43,27 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
+
+        .background-color {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.10)), url('./images/slider-1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .background-color-2 {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.10)), url('./images/slider-2.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .background-color-3 {
+            background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.60), rgba(17, 17, 17, 0.10)), url('./images/slider-3.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -159,11 +180,12 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="max-w-7xl mx-auto">
         <!-- practice area -->
-        <section class="max-w-7xl mx-auto py-28">
+        <section class="py-28">
             <h2 class="font-garamond text-4xl font-extrabold text-center">The Legal Practice Area</h2>
-            <p class="pt-6 pb-16 font-poppins max-w-[75%] mx-auto text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <p class="pt-6 pb-16 font-poppins max-w-[75%] mx-auto text-center">There are many variations of passages of
+                Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             <!-- cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- card 1 -->
@@ -173,7 +195,8 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Business Law</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
@@ -184,7 +207,8 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Criminal Law</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
@@ -195,7 +219,8 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Child Support</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
@@ -206,7 +231,8 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Education Law</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
@@ -217,7 +243,8 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Divorce Law</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
@@ -228,13 +255,85 @@
                     </div>
                     <div class="text-center">
                         <h3 class="mt-8 mb-6 text-3xl font-extrabold font-garamond">Tax Law</h3>
-                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <p class="leading-6 mb-8">There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour.</p>
                         <img class="mx-auto" src="./images/Frame.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!-- client section -->
+        <section>
+            <h2 class="font-garamond font-extrabold text-4xl text-center">What Our Client Say</h2>
+            <p class="leading-6 w-[75%] mx-auto text-center pt-6 pb-16">There are many variations of passages of Lorem
+                Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <!-- slider -->
+            <div class="carousel w-full h-[500px] rounded-lg overflow-hidden">
+                <!-- slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="w-full max-h-[700px]  background-color bg-center bg-cover">
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 text-white items-center">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <div class="max-w-[70%] flex flex-col items-center">
+                            <img src="./images/image.png" alt="">
+                            <h3 class="font-garamond text-2xl font-extrabold pt-6 pb-2">Awlad Hossain</h3>
+                            <p class="font-poppins">UIX Designer</p>
+                            <p class="font-poppins leading-6 mt-8 text-center">Contrary to popular belief, Lorem Ipsum
+                                is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="w-full max-h-[700px]  background-color-2 bg-center bg-cover">
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <div class="max-w-[70%] flex flex-col items-center">
+                            <img src="./images/image.png" alt="">
+                            <h3 class="font-garamond text-2xl font-extrabold pt-6 pb-2 text-white">Awlad Hossain</h3>
+                            <p class="font-poppins text-white">UIX Designer</p>
+                            <p class="font-poppins leading-6 mt-8 text-center text-white">Contrary to popular belief,
+                                Lorem Ipsum
+                                is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="w-full max-h-[700px]  background-color-3 bg-center bg-cover">
+                    </div>
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <div class="max-w-[70%] flex flex-col items-center">
+                            <img src="./images/image.png" alt="">
+                            <h3 class="font-garamond text-2xl font-extrabold pt-6 pb-2 text-white">Awlad Hossain</h3>
+                            <p class="font-poppins text-white">UIX Designer</p>
+                            <p class="font-poppins leading-6 mt-8 text-center text-white">Contrary to popular belief,
+                                Lorem Ipsum
+                                is not simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq section -->
     </main>
     <footer>
 
